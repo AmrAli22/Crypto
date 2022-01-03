@@ -8,6 +8,15 @@
 import Foundation
     
 struct Coin {
-    let name : String
-    let price : String 
+    let name   : String
+    let price  : String
+}
+
+struct CryptoData {
+    let coins  : [Coin]
+}
+
+struct CryptoDataContainer {
+    let status : String
+    let data   : CryptoData
 }
