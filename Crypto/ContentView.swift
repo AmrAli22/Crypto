@@ -6,16 +6,20 @@
 //
 
 import SwiftUI
+import Combine
 
 struct CoinListView: View {
     
-    private let viewModel = CoinListViewModel()
+    @ObservedObject private var viewModel = CoinListViewModel()
     
     var body: some View {
-        Text("Hello, world!")
-            .onAppear {
+        NavigationView {
+            List(viewModel.coinViewModels, id: \.self) { coinItem in
+                Text(coinItem.name + "-" + coinItem.formattedPrice)
+            }.onAppear() {
                 self.viewModel.fetchCoins()
-            }
+            }.navigationBarTitle("Coins")
+        }
     }
 }
 

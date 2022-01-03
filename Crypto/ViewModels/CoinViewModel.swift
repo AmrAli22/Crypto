@@ -7,7 +7,7 @@
 
 import Foundation
     
-struct CoinViewModel {
+struct CoinViewModel : Hashable {
     
     init(_ coin: Coin) {
         self.coin = coin
@@ -15,11 +15,11 @@ struct CoinViewModel {
     
     private let coin : Coin
     
-    private var name : String {
+     var name : String {
         return coin.name
     }
     
-    private var price : String {
+     var formattedPrice : String {
         //MARK: - TODO FORMATTING
         return coin.price
     }
