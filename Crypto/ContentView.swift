@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct CoinListView: View {
+    
+    private let viewModel = CoinListViewModel()
+    
     var body: some View {
         Text("Hello, world!")
-            .padding()
+            .onAppear {
+                self.viewModel.fetchCoins()
+            }
     }
 }
 

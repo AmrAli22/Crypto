@@ -27,7 +27,9 @@ final class CryptoService {
         return URLSession.shared.dataTaskPublisher(for: components.url!)
             .map { $0.data }
             .decode(type: CryptoDataContainer.self, decoder: JSONDecoder())
+            .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
+        
     }
     
     

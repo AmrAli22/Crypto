@@ -21,8 +21,7 @@ class CoinListViewModel : ObservableObject {
             
         }, receiveValue: { cryptoConatiner in
             self.coinViewModels = cryptoConatiner.data.coins.map { CoinViewModel($0) }
+            print("SELF :_ \(self.coinViewModels)")
         })
     }
-    
-    
 }
