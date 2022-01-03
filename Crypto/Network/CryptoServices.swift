@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import Combine
+
 final class CryptoService {
     
     var components: URLComponents {
@@ -18,6 +20,14 @@ final class CryptoService {
             URLQueryItem(name: "timePeriod", value: "24h")
         ]
         return components
+    }
+    
+    
+    func fetchCoins() -> AnyPublisher<CryptoDataContainer, Error> {
+        return URLSession.shared.dataTaskPublisher(for: components.url!)
+            .map { $0.data }
+            .decode(type: CryptoDataContainer.self, decoder: JSONDecoder())
+            .eraseToAnyPublisher()
     }
     
     
