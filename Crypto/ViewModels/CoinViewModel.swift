@@ -8,6 +8,11 @@
 import Foundation
     
 struct CoinViewModel {
+    
+    init(_ coin: Coin) {
+        self.coin = coin
+    }
+    
     private let coin : Coin
     
     private var name : String {
