@@ -14,6 +14,7 @@
 		A21EA11D2782F447006F54DA /* CryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EA11C2782F447006F54DA /* CryptoTests.swift */; };
 		A21EA1272782F447006F54DA /* CryptoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EA1262782F447006F54DA /* CryptoUITests.swift */; };
 		A21EA1292782F447006F54DA /* CryptoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EA1282782F447006F54DA /* CryptoUITestsLaunchTests.swift */; };
+		A21EA1372782F5BA006F54DA /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EA1362782F5BA006F54DA /* CoinModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		A21EA1222782F447006F54DA /* CryptoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A21EA1262782F447006F54DA /* CryptoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoUITests.swift; sourceTree = "<group>"; };
 		A21EA1282782F447006F54DA /* CryptoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A21EA1362782F5BA006F54DA /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		A21EA10A2782F444006F54DA /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				A21EA1352782F5A8006F54DA /* Model */,
 				A21EA10B2782F444006F54DA /* CryptoApp.swift */,
 				A21EA10D2782F444006F54DA /* ContentView.swift */,
 				A21EA10F2782F446006F54DA /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				A21EA1282782F447006F54DA /* CryptoUITestsLaunchTests.swift */,
 			);
 			path = CryptoUITests;
+			sourceTree = "<group>";
+		};
+		A21EA1352782F5A8006F54DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A21EA1362782F5BA006F54DA /* CoinModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A21EA10E2782F444006F54DA /* ContentView.swift in Sources */,
+				A21EA1372782F5BA006F54DA /* CoinModel.swift in Sources */,
 				A21EA10C2782F444006F54DA /* CryptoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
