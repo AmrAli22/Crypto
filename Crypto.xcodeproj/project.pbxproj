@@ -17,6 +17,7 @@
 		A21EA1372782F5BA006F54DA /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EA1362782F5BA006F54DA /* CoinModel.swift */; };
 		A21EA13A2782F7BA006F54DA /* CoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EA1392782F7BA006F54DA /* CoinViewModel.swift */; };
 		A21EA13C2782F908006F54DA /* CoinListViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EA13B2782F908006F54DA /* CoinListViewModels.swift */; };
+		A21EA13E278305C1006F54DA /* CryptoServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EA13D278305C1006F54DA /* CryptoServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		A21EA1362782F5BA006F54DA /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		A21EA1392782F7BA006F54DA /* CoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewModel.swift; sourceTree = "<group>"; };
 		A21EA13B2782F908006F54DA /* CoinListViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListViewModels.swift; sourceTree = "<group>"; };
+		A21EA13D278305C1006F54DA /* CryptoServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		A21EA10A2782F444006F54DA /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				A21EA13F278305C5006F54DA /* Network */,
 				A21EA1382782F79D006F54DA /* ViewModels */,
 				A21EA1352782F5A8006F54DA /* Model */,
 				A21EA10B2782F444006F54DA /* CryptoApp.swift */,
@@ -150,6 +153,14 @@
 				A21EA13B2782F908006F54DA /* CoinListViewModels.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A21EA13F278305C5006F54DA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A21EA13D278305C1006F54DA /* CryptoServices.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +297,7 @@
 				A21EA1372782F5BA006F54DA /* CoinModel.swift in Sources */,
 				A21EA13C2782F908006F54DA /* CoinListViewModels.swift in Sources */,
 				A21EA10C2782F444006F54DA /* CryptoApp.swift in Sources */,
+				A21EA13E278305C1006F54DA /* CryptoServices.swift in Sources */,
 				A21EA13A2782F7BA006F54DA /* CoinViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
