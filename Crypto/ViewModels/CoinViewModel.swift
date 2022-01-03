@@ -20,8 +20,14 @@ struct CoinViewModel : Hashable {
     }
     
      var formattedPrice : String {
-        //MARK: - TODO FORMATTING
-        return coin.price
+        //MARK: - FORMATTING
+         
+         let numberFormatter = NumberFormatter()
+         numberFormatter.numberStyle = .currency
+         
+         guard let price = Double(coin.price) , let formattedPrice = numberFormatter.string(from: NSNumber(value: price)) else { return "" }
+         
+        return formattedPrice
     }
 }
 

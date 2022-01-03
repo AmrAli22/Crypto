@@ -15,7 +15,7 @@ struct CoinListView: View {
     var body: some View {
         NavigationView {
             List(viewModel.coinViewModels, id: \.self) { coinItem in
-                Text(coinItem.name + "-" + coinItem.formattedPrice)
+                Text(coinItem.name + " - " + coinItem.formattedPrice)
             }.onAppear() {
                 self.viewModel.fetchCoins()
             }.navigationBarTitle("Coins")
