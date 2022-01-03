@@ -9,5 +9,5 @@ import Foundation
     
 struct Coin {
     let name : String
-    let price : String
+    let price : String 
 }
