@@ -16,6 +16,7 @@
 		A21EA1292782F447006F54DA /* CryptoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EA1282782F447006F54DA /* CryptoUITestsLaunchTests.swift */; };
 		A21EA1372782F5BA006F54DA /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EA1362782F5BA006F54DA /* CoinModel.swift */; };
 		A21EA13A2782F7BA006F54DA /* CoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EA1392782F7BA006F54DA /* CoinViewModel.swift */; };
+		A21EA13C2782F908006F54DA /* CoinListViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EA13B2782F908006F54DA /* CoinListViewModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		A21EA1282782F447006F54DA /* CryptoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A21EA1362782F5BA006F54DA /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		A21EA1392782F7BA006F54DA /* CoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewModel.swift; sourceTree = "<group>"; };
+		A21EA13B2782F908006F54DA /* CoinListViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListViewModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				A21EA1392782F7BA006F54DA /* CoinViewModel.swift */,
+				A21EA13B2782F908006F54DA /* CoinListViewModels.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			files = (
 				A21EA10E2782F444006F54DA /* ContentView.swift in Sources */,
 				A21EA1372782F5BA006F54DA /* CoinModel.swift in Sources */,
+				A21EA13C2782F908006F54DA /* CoinListViewModels.swift in Sources */,
 				A21EA10C2782F444006F54DA /* CryptoApp.swift in Sources */,
 				A21EA13A2782F7BA006F54DA /* CoinViewModel.swift in Sources */,
 			);
